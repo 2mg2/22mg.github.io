@@ -1,0 +1,11 @@
+r1 = ["☠️","☠️","☠️"]
+r2 = ["☠️","☠️","☠️"]
+r3 = ["☠️","☠️","☠️"]
+map = [r1,r2,r3]
+print(f"{r1}\n{r2}\n{r3}")
+x = input("where you want to put the treasure ?\n")
+vert = int(x[0])
+hori = int(x[1])
+sel_row = map[vert - 1]
+sel_row[hori-1] = "X"
+print(f"{r1}\n{r2}\n{r3}")
